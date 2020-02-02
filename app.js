@@ -42,6 +42,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    openId: 'oXzo_5Sr-fZG3npAwbKY3bUAsjDQ',
+    env: 'cloud990320'
   }
 })
