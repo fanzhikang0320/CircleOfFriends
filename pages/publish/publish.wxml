@@ -1,0 +1,24 @@
+<!--pages/publish/publish.wxml-->
+<view class="content">
+  <form bindsubmit="formSubmit">
+    <!-- 用户发表言论区 -->
+    <view class="text-content">
+      <view class="text-area">
+        <textarea name="input-content" placeholder="说点什么..." placeholder-class="holder" value=""> </textarea>
+      </view>
+    </view>
+    <!-- 图片预览区 -->
+    <scroll-view class="image-group" scroll-x>
+      <view>
+        <image src=""></image>
+        <icon type="clear" bindtap="removeImg"></icon>
+      </view>
+
+    </scroll-view>
+    <view class="btn-func">
+      <button class="btn-img" bindtap="chooseImage">选择图片</button>
+      <button class="btn" form-type="submit" type="primary" open-type="getUserInfo">发布社交圈</button>
+    </view>
+  </form>
+
+</view>

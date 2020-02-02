@@ -1,0 +1,85 @@
+/* pages/me/me.wxss */
+.amountBg {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  background-color: #5495e6;
+  align-items: center;
+}
+.img {
+  overflow: hidden;
+  display: block;
+  margin-left: 40rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.account {
+  width: 70%;
+  color: #fff;
+  margin-left: 20rpx;
+  align-content: center;
+}
+.nickname {
+  font-size: 32rpx;
+  font-family: 'Microsoft Yahei';
+}
+.address {
+  font-size: 26rpx;
+}
+.content {
+  height: 500rpx;
+  background-color: #fff;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 90rpx;
+  align-items: center;
+}
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+}
+.itemName {
+  margin-left: 20rpx;
+  width: 40%;
+  font-size: 24rpx;
+  font-weight: bold;
+}
+
+.hr {
+  height: 2rpx;
+  background-color: #ccc;
+  opacity: 0.5;
+}
+.right {
+  width: 40%;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

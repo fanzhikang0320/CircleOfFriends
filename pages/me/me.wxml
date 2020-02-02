@@ -1,0 +1,65 @@
+
+<!-- 个人信息 -->
+<view class="amountBg">
+  <view class="img">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="account">
+    <view class="nickname">
+      <open-data type="userNickname" lang="zh_CN"></open-data>
+    </view>
+    <view class="address">
+      <open-data type="userCountry"></open-data>
+      <open-data type="userProvince"></open-data>
+      <open-data type="userCity"></open-data>
+    </view>
+  </view>
+</view>
+<!-- 菜单列表 -->
+<view class="content">
+  <!-- 收藏列表 -->
+  <view class="hr"></view>
+  <view class="item">
+    <view class="icon">
+      <image src="/source/image/collect.png" style="width:44rpx; height:44rpx;"></image>
+    </view>
+    <view class="itemName">
+      <view>收藏列表</view>
+    </view>
+    <view class="right">></view>
+
+  </view>
+  <!-- 发布历史 -->
+  <view class="hr"></view>
+  <view class="item">
+    <view class="icon">
+      <image src="/source/image/history.png" style="width:44rpx; height:44rpx;"></image>
+    </view>
+    <view class="itemName">
+      <view>历史记录</view>
+    </view>
+    <view class="right">></view>
+  </view>
+  <!-- 邀请好友 -->
+  <view class="hr"></view>
+  <view class="item">
+    <view class="icon">
+      <image src="/source/image/friend.png" style="width:44rpx; height:44rpx;"></image>
+    </view>
+    <view class="itemName">
+      <view>邀请好友</view>
+    </view>
+    <view class="right">></view>
+  </view>
+  <!-- 产品意见 -->
+  <view class="hr"></view>
+  <view class="item">
+    <view class="icon">
+      <image src="/source/image/suggest.png" style="width:44rpx; height:44rpx;"></image>
+    </view>
+    <view class="itemName">
+      <view>用户反馈</view>
+    </view>
+    <view class="right">></view>
+  </view>
+</view>

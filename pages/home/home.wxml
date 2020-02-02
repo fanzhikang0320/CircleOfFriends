@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class="container" bindtap="onItemClick" >
+  <view class="container-content">
+    <view class="user-info">
+      <image class="user-head" src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=612723378,2699755568&fm=111&gp=0.jpg"></image>
+      <view class="user-name-time">
+        <view class="user-name">xxxx</view>
+        <view class="user-publish-time">2020-02-02 08:00</view>
+      </view>
+    </view>
+    <!-- 内容显示 -->
+    <view class="content">
+      <text class="content-text">内容标题</text>
+      <scroll-view class="content-scroll" scroll-x>
+        <image class="content-img" src="https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3378708182,3822632179&fm=26&gp=0.jpg"></image>
+      </scroll-view>
+    <!-- 只发单图片 -->
+      <scroll-view hidden="true">
+        <image src="https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3378708182,3822632179&fm=26&gp=0.jpg"></image>
+      </scroll-view>
+      <!-- 只发单文字 -->
+      <scroll-view hidden="true">
+        <text class="content-text">文章标题</text>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>
