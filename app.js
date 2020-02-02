@@ -1,6 +1,14 @@
 //app.js
 App({
   onLaunch: function () {
+    if (!wx.cloud) {
+      console.log('微信版本过低');
+    } else {
+      wx.cloud.init({
+        traceUser: true,
+        env: 'cloud990320'
+      });
+    }
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
