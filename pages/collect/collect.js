@@ -32,8 +32,6 @@ Page({
       .get({
         success: res => {
           that.data.collects = res.data;
-
-          // console.log(res.data);
           that.getTopicFromCollect();
         }
       })
@@ -43,7 +41,6 @@ Page({
    */
   getTopicFromCollect () {
     var tempTopic = {};
-    console.log(that.data.collects);
     for (let i = 0 ; i < that.data.collects.length ; i ++) {
       let topicId = that.data.collects[i].id;
       //去话题数据表找数据
@@ -51,7 +48,6 @@ Page({
         .doc(topicId)
           .get({
             success: res => {
-              console.log(res);  
               that.data.topic.push(res.data);
               that.setData({
                 topic: that.data.topic

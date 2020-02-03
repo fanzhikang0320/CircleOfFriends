@@ -80,6 +80,20 @@
 					"id": -1,
 					"name": "pages/history/history",
 					"pathName": "pages/history/history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/reply/reply",
+					"pathName": "pages/reply/reply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advance/advance",
+					"pathName": "pages/advance/advance",
 					"scene": null
 				}
 			]

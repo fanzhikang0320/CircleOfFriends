@@ -42,7 +42,7 @@
   </view>
   <!-- 邀请好友 -->
   <view class="hr"></view>
-  <view class="item">
+  <view class="item" bindtap="clickInvitivation">
     <view class="icon">
       <image src="/source/image/friend.png" style="width:44rpx; height:44rpx;"></image>
     </view>
@@ -53,7 +53,7 @@
   </view>
   <!-- 产品意见 -->
   <view class="hr"></view>
-  <view class="item">
+  <view class="item" bindtap="onAdvanceClick">
     <view class="icon">
       <image src="/source/image/suggest.png" style="width:44rpx; height:44rpx;"></image>
     </view>

@@ -1,0 +1,33 @@
+/* pages/reply/reply.wxss */
+.content {
+  width: 100%;
+  height: 100%;
+}
+.text-content {
+  padding: 0 25rpx;
+}
+.input-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 10rpx;
+  background-color: #efefef;
+  padding: 5rpx;
+  margin: 40rpx 0;
+}
+.btn-func {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+
+
+

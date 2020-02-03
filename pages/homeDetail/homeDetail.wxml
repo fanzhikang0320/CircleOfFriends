@@ -32,14 +32,25 @@
         </block>
       </view>
     </view>
+    <!-- 评论区 -->
+    <view class="replay-content" wx:if="{{replays.length > 0}}">
+      <text class="tip-text">-----以下是回复内容-----</text>
+      <block wx:for="{{replays}}" wx:for-index="idx">
+        <text>{{idx}}:{{item.content}}</text>
+      </block>
+    </view>
     <!-- 收藏区域 -->
     <view class="like-container" wx:if="{{isLike}}" bindtap="onLikeClick">
       <image class="like-icon" src="/source/image/like.png"></image>
       <text class="like-text">已喜欢</text>
     </view>
-
-    <view wx:else bindtap="onLikeClick">
+    <view class="like-container" bindtap="onLikeClick" wx:else>
       <image class="like-icon" src="/source/image/noLike.png"></image>
       <text class="like-text">喜欢</text>
     </view>
+    <!-- 回复按钮 -->
+    <view class="replay-container">
+      <button type="primary" bindtap="onReplayClick">回复</button>
+    </view>
+
   </view>

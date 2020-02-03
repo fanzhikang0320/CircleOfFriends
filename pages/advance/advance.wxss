@@ -1,0 +1,32 @@
+/* pages/advance/advance.wxss */
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.text-content {
+  padding: 0 25rpx;
+}
+textarea {
+  width: 100%;
+  height: 750rpx;
+  padding: 10rpx;
+  background-color: #ebd9d9;
+}
+.input-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 72rpx;
+  align-items: center;
+  line-height: 72rpx;
+  border-radius: 10rpx;
+  background-color: #ebd9d9;
+  padding: 10rpx;
+  margin: 40rpx 0;
+}
+.btn-func {
+  margin-top: 30rpx;
+}
+
+

@@ -1,0 +1,17 @@
+<!--pages/advance/advance.wxml-->
+<view class="content">
+  <form bindsubmit="formSubmit">
+    <view class="text-content">
+      <view class="input-content">
+        <input placeholder="标题" name="title"></input>
+      </view>
+      <view class="text-area">
+        <textarea name="input-content" placeholder="输入详细描述" value=""></textarea>
+      </view>
+    </view>
+    <view class="btn-func">
+      <button type="primary" form-type="submit" open-type="getUserInfo">提交</button>
+    </view>
+  </form>
+
+</view>

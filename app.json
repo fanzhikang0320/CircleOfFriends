@@ -5,7 +5,9 @@
     "pages/me/me",
     "pages/collect/collect",
     "pages/homeDetail/homeDetail",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/reply/reply",
+    "pages/advance/advance"
   ],
   "window": {
     "backgroundTextStyle": "light",

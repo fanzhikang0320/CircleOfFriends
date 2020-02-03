@@ -3,8 +3,6 @@
 let that;
 const db = wx.cloud.database();
 
-
-
 Page({
 
   /**
@@ -14,7 +12,25 @@ Page({
     topic: {},
     id: '',
     openid: '',
-    isLike: false
+    isLike: false,
+    replays:[]
+  },
+  /**
+   * 获取回复列表
+   */
+  getReplay () {
+    db.collection('replayDemo')
+      .where({
+        t_id: that.data.id
+      })
+      .get({
+        success: res => {
+          that.setData({
+            replays: res.data
+          });
+        },
+        fail: console.error
+      })
   },
   /**
    * 预览图片
@@ -40,10 +56,17 @@ Page({
     }
   },
   /**
-   * 
+   * 取消喜欢
    */
   removeFormCollectServer () {
-
+    //删除数据库当中的记录
+    db.collection('collectDemo')
+      .doc(that.data.id)
+        .remove({
+          success: res => {
+            that.refreshLikeIcon(false);
+          }
+        })
   },
   /**
    * 添加收藏
@@ -69,6 +92,15 @@ Page({
     that.setData({
       isLike: that.data.isLike
     });
+  },
+  /**
+   * 回复
+   */
+  onReplayClick() {
+    //通过id和openid进行跳转
+    wx.navigateTo({
+      url: '/pages/reply/reply?id=' + that.data.id + '&openid=' + that.data.openid
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -106,5 +138,7 @@ Page({
         fail: console.error
       })
   },
-
+  onShow: function () {
+    this.getReplay();
+  }
 })

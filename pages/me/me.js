@@ -8,6 +8,34 @@ Page({
 
   },
   /**
+   * 邀请好友
+   */
+  clickInvitivation () {
+    this.actioncnt();
+  },
+  /**
+   * 底部菜单操作
+   */
+  actioncnt () {
+    wx.showActionSheet({
+      itemList: ['群聊','好友','朋友圈'],
+      success: res => {
+        console.log(res.tapIndex);
+      },
+      fail: res => {
+        console.log('fail',res);
+      }
+    })
+  },
+  /**
+   * 产品建议
+   */
+  onAdvanceClick () {
+    wx.navigateTo({
+      url: '/pages/advance/advance',
+    })
+  },
+  /**
    * 收藏列表
    */
   onCollectClick () {
