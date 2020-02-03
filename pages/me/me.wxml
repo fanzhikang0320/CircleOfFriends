@@ -19,7 +19,7 @@
 <view class="content">
   <!-- 收藏列表 -->
   <view class="hr"></view>
-  <view class="item">
+  <view class="item" bindtap="onCollectClick">
     <view class="icon">
       <image src="/source/image/collect.png" style="width:44rpx; height:44rpx;"></image>
     </view>
@@ -31,7 +31,7 @@
   </view>
   <!-- 发布历史 -->
   <view class="hr"></view>
-  <view class="item">
+  <view class="item" bindtap="onHistoryClick">
     <view class="icon">
       <image src="/source/image/history.png" style="width:44rpx; height:44rpx;"></image>
     </view>

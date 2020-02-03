@@ -1,6 +1,6 @@
-<!--pages/home/home.wxml-->
+<!--pages/collect/collect.wxml-->
 <block wx:for="{{topic}}" wx:key="index">
-  <view class="container" bindtap="onItemClick" data-topicid="{{item._id}}" data-openid="{{item._openid}}">
+  <view class="container" bindtap="onItemClick" >
     <view class="container-content">
       <view class="user-info">
         <image class="user-head" src="{{item.userInfo.avatarUrl}}"></image>
@@ -35,4 +35,3 @@
     </view>
   </view>
 </block>
-

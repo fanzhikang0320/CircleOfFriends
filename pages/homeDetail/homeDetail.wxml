@@ -1,0 +1,45 @@
+<!--pages/homeDetail/homeDetail.wxml-->
+  <view class="container">
+    <view class="container-content">
+      <view class="user-info">
+        <image class="user-head" src="{{topic.userInfo.avatarUrl}}"></image>
+        <view class="user-name-time">
+          <view class="user-name">{{topic.userInfo.nickname}}</view>
+          <view class="user-publish-time">{{topic.date}}</view>
+        </view>
+      </view>
+      <!-- 内容 + 图片显示 -->
+      <view class="content">
+        <block wx:if="{{topic.content != '' && topic.images.length > 0}}">
+          <text class="content-text">{{topic.content}}</text>
+          <scroll-view class="content-scroll" scroll-x>
+            <block wx:for="{{topic.images}}" wx:for-item="itemSrc" wx:for-index="idx">
+              <image class="content-img" src="{{itemSrc}}" bindtap="previewImg" data-index="{{idx}}"></image>
+            </block>
+          </scroll-view>
+        </block>
+        <!-- 只发单图片 -->
+        <block wx:elif="{{topic.content == '' && topic.images.length > 0}}">
+          <scroll-view>
+            <block wx:for="{{topic.images}}" wx:for-item="itemSrc" wx:for-index="idx">
+              <image class="content-img" src="{{itemSrc}}" bindtap="previewImg" data-index="{{idx}}"></image>
+            </block>
+          </scroll-view>
+        </block>
+        <!-- 只发单文字 -->
+        <block wx:elif="{{topic.content != '' && topic.images.length == 0}}">
+          <text class="content-text">{{topic.content}}</text>
+        </block>
+      </view>
+    </view>
+    <!-- 收藏区域 -->
+    <view class="like-container" wx:if="{{isLike}}" bindtap="onLikeClick">
+      <image class="like-icon" src="/source/image/like.png"></image>
+      <text class="like-text">已喜欢</text>
+    </view>
+
+    <view wx:else bindtap="onLikeClick">
+      <image class="like-icon" src="/source/image/noLike.png"></image>
+      <text class="like-text">喜欢</text>
+    </view>
+  </view>

@@ -59,6 +59,27 @@
 					"id": -1,
 					"name": "pages/me/me",
 					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/collect/collect",
+					"pathName": "pages/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/homeDetail/homeDetail",
+					"pathName": "pages/homeDetail/homeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/history/history",
+					"pathName": "pages/history/history",
 					"scene": null
 				}
 			]

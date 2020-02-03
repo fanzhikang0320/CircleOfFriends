@@ -1,4 +1,4 @@
-<!--pages/home/home.wxml-->
+<!--pages/history/history.wxml-->
 <block wx:for="{{topic}}" wx:key="index">
   <view class="container" bindtap="onItemClick" data-topicid="{{item._id}}" data-openid="{{item._openid}}">
     <view class="container-content">
@@ -35,4 +35,3 @@
     </view>
   </view>
 </block>
-

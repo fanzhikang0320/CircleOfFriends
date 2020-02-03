@@ -2,7 +2,10 @@
   "pages": [
     "pages/home/home",
     "pages/publish/publish",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/collect/collect",
+    "pages/homeDetail/homeDetail",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",

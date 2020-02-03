@@ -52,7 +52,15 @@ Page({
       fail: console.error
     });
   },
-
+  // 点击某个朋友圈内容
+  onItemClick (e) {
+    let id = e.currentTarget.dataset.topicid;
+    let openid = e.currentTarget.dataset.openid;
+    //跳转
+    wx.navigateTo({
+      url: '/pages/homeDetail/homeDetail?id=' + id + '&openid=' + openid ,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

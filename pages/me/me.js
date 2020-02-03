@@ -7,7 +7,23 @@ Page({
   data: {
 
   },
-
+  /**
+   * 收藏列表
+   */
+  onCollectClick () {
+    //跳转
+    wx.navigateTo({
+      url: '/pages/collect/collect',
+    })
+  },
+  /**
+   * 查看发布历史
+   */
+  onHistoryClick () {
+    wx.navigateTo({
+      url: '/pages/history/history',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
